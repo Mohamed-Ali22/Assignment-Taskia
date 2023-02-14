@@ -1,0 +1,417 @@
+
+/* castmuize page */
+:root{
+    --main-color:#7786d0;
+    --head-color:#414141;
+    --slogin-color:#9d9d9d;
+    --white-color:#ffffff;
+}
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* castmuize page */
+
+/* start head section */
+.page-head{
+    width:100%;
+    height: 80vh;
+}
+/* start navgtion bar */
+header{
+    width:100%;
+    height: 50px;
+}
+nav{
+    width:90%;
+    height: 100%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:var(--main-color);
+}
+nav .header-logo{
+    width:20%;
+    height: 100%;
+    color:var(--main-color)var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-links{
+    width:10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-links button{
+    width:150px;
+    height: 20px;
+    border-radius: 10px;
+    border:1px solid var(--main-color);
+    color:var(--main-color);
+    background-color: transparent;
+    position: relative;
+    transition: 1s;
+}
+.header-links button span{
+    width:0;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    border-radius: 9px;
+    background-color: var(--main-color);
+    border:1px solid var(--main-color);
+    opacity: 0;
+    z-index: -1;
+    transition: 1s;
+}
+/* start navgation hover effict */
+.header-links button:hover span{
+    width:100%;
+    opacity: 1;
+}
+.header-links button:hover{
+    color:var(--white-color);
+    transition-delay: 0.3s;
+}
+/* end navgation hover effict */
+/* end navgtion bar */
+
+/* start content head section */
+.header-content{
+    width:100%;
+    height: calc(80vh - 50px);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.header-content .header-content-text,
+.header-content .header-content-img{
+    width:50%;
+    height: 100%;
+    padding: 5%;
+}
+.header-content-text h1{
+    margin-bottom: 10px;
+    color:var(--head-color);
+}
+.header-content-text p{
+    font-size: 14px;
+    color:var(--slogin-color);
+}
+.header-content .header-content-img img{
+    width:100%;
+    height: 90%;
+}
+.header-content-text .buton{
+    margin-top:20px;
+}
+.header-content-text button{
+    border-radius: 15px;
+    padding: 5px 30px;
+    outline: none;
+    border: 1px solid var(--main-color);
+    color:var(--main-color);
+    position: relative;
+    background-color: transparent;
+}
+.header-content-text .larg{
+    width:180px;
+    margin-right:35px;
+}
+/* end content head section */
+/* end head section */
+
+/* start managment section */
+.mang{
+    width:100%;
+    height: 80vh;
+}
+.contener{
+    width:90%;
+    height: 100%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contener .mang-img,
+.contener .mang-text{
+    padding: 5%;
+}
+/* start image section managment */
+.contener .mang-img{
+    width:60%
+}
+.contener .mang-img img{
+    width:100%;
+    height: 50%;
+}
+/* end image section managment  */
+/* start text section managment */
+.contener .mang-text{
+    width:40%;
+}
+.contener .mang-text h2{
+    font-size: 1.5rem;
+    margin-bottom: 20px ;
+    color:var(--head-color);
+}
+.contener .mang-text p{
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+    color:var(--slogin-color);
+}
+/* end text section managment */
+/* start button section managment */
+.contener .mang-text .btn{
+    width:100%;
+    display: flex;
+    align-items: flex-end;
+    
+}
+.btn button{
+    width:100%;
+    height: 30px;
+    border-radius: 15px;
+    border:1px solid var(--main-color);
+    background-color: transparent;
+    color:var(--main-color);
+    padding: 5px 0;
+    position: relative;
+}
+/* end button section managment */
+/* end managment section */
+
+/* start Seamless section */
+.sem{
+    width:100%;
+    height: 80vh;
+}
+.contener .sem-img,
+.contener .sem-text{
+    padding: 5%;
+}
+/* start image Seamless section */
+.contener .sem-text .image{
+    display: flex;
+}
+.contener .sem-text .image img{
+    width: 30px;
+    height: 30px;
+}
+.contener .sem-text .image .larger{
+    width: 60px;
+    height: 40px;
+}
+/* end image Seamless section */
+/* start text Seamless section */
+.contener .sem-text{
+    width:50%;
+}
+.contener .sem-text h2{
+    font-size: 1.5rem;
+    margin-bottom: 20px ;
+    color:var(--head-color);
+}
+.contener .sem-text p{
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+    color:var(--slogin-color);
+}
+/* end text Seamless section */
+/* start text image Seamless section */
+.contener .sem-img{
+    width:50%;
+}
+.contener .sem-img img{
+    width:100%;
+}
+/* end text image Seamless section */
+/* end Seamless section */
+
+/* start last page section */
+.last{
+    width:100%;
+    height: 80vh;
+}
+/* start last left image  section */
+.left-img{
+    width:25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+.left-img img{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.left-img .one{
+    width:70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.left-img .thre{
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.left-img .move{
+    align-self: flex-end;
+}
+/* end last left image  section */
+/* start last center text  section */
+.center{
+    width:50%;
+    height: 70%;
+    text-align: center;
+}
+.center h3{
+    color:var(--head-color);
+}
+.center h2{
+    margin-top: 15%;
+}
+.center h2 span{
+    color:var(--main-color);
+    font-size: 5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+/* end last center text section */
+/* start last right image section */
+.right-img{
+    width:25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+.right-img img{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.right-img .one{
+    width:70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.right-img .thre{
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.right-img .move{
+    align-self: flex-start;
+}
+/* end last right image section */
+/* end last page section */
+
+/* start footer section */
+footer{
+    width:100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer h2{
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+footer p{
+    margin-bottom: 20px;
+    font-size: 0.8rem;
+    color: var(--slogin-color);
+}
+footer .bttn{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+.bttn button{
+    background-color: transparent;
+    color:var(--main-color);
+    border: 1px solid var(--main-color);
+    border-radius: 15px;
+    padding: 5px 20px;
+    margin: 10px;
+    position: relative;
+}
+.bttn .larg{
+    width:200px;
+    padding: 5px 10px;
+}
+/* end footer section */
+
+/*********** start button hover effect ***********/
+button span{
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    border-radius: 10px;
+    background-color: var(--main-color);
+    z-index: -1;
+    opacity: 0;
+    transition: 1s;
+}
+button:hover span{
+    width: 100%;
+    opacity: 1;
+}
+.buton button span,
+.btn button span{
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    border-radius: 15px;
+    background-color: var(--main-color);
+    border:1px solid var(--main-color);
+    z-index: -1;
+    opacity: 0;
+    transition: 1s;
+}
+.buton button:hover span,
+.btn button:hover span{
+    width: 100%;
+    opacity: 1;
+}
+button:hover{
+    color:var(--white-color);
+}
+button{
+    transition-delay: 0.5s;
+}
+/*********** end button hover effect ***********/
+/* Moamed ALi */
